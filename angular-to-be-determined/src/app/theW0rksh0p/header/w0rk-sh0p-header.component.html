@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <h1>The W0rksh0p</h1>
+    </mat-toolbar-row>
+
+    <mat-toolbar-row>
+        <button mat-button [matMenuTriggerFor]="projects">Projects</button>
+
+        <button mat-button [routerLink]="['/about-us']">About us</button>
+    </mat-toolbar-row>
+</mat-toolbar>
+<mat-menu #projects>
+    <button mat-menu-item>Project 1</button>
+    <button mat-menu-item>Project 2</button>
+    <button mat-menu-item>Project 3</button>
+</mat-menu>
